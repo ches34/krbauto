@@ -1,0 +1,141 @@
+<link rel="stylesheet" type="text/css" href="websitecss.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steeleford Hill Climb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Steeleford Hill Climb - 20/08/23</h1>
+            <p>Click photos for better View</p>
+            <head>
+                <style>
+                div.gallery {
+                  margin: 10px;
+                  float: left;
+                  width: 125px;
+                }
+                
+                div.gallery img {
+                  width: 100%;
+                  height: auto;
+                }
+                
+                div.desc {
+                  padding: 15px;
+                  text-align: center;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <div class="gallery">
+                  <a target="_blank" href="CARRERA TARGA SPORT FRONT.jpg">
+                    <img src="CARRERA TARGA SPORT FRONT.jpg" alt="Carrera Targa Sport Front" width="600" height="400">
+                  </a>
+                  <div class="desc">Carrera Targa Sport - Front</div>
+                </div>
+                
+                <div class="gallery">
+                  <a target="_blank" href="CARRERA TARGA SPORT SIDE.jpg">
+                    <img src="CARRERA TARGA SPORT SIDE.jpg" alt="Carrera Targa Sport Side" width="600" height="400">
+                  </a>
+                  <div class="desc">Carrera Targa Sport - Side</div>
+                </div>
+                
+                <div class="gallery">
+                  <a target="_blank" href="CARRERA TARGA SPORT INTERIOR.jpg">
+                    <img src="CARRERA TARGA SPORT INTERIOR.jpg" alt="Carrera Targa Sport Interior" width="600" height="400">
+                  </a>
+                  <div class="desc">Carrera Targa Sport - Interior</div>
+                </div>
+                
+                <div class="gallery">
+                    <a target="_blank" href="488 PISTA REAR.jpg">
+                      <img src="488 PISTA REAR.jpg" alt="Ferrari 488 Pista Rear" width="600" height="400">
+                    </a>
+                    <div class="desc">Ferrari 488 Pista - Rear</div>
+                  </div>
+
+                  <div class="gallery">
+                    <a target="_blank" href="STO BEHIND TREE.jpg">
+                      <img src="STO BEHIND TREE.jpg" alt="Lamborghini Huracan STO" width="600" height="400">
+                    </a>
+                    <div class="desc">Lamborghini Huracan STO</div>
+                  </div>
+
+                  <div class="gallery">
+                    <a target="_blank" href="STO INTERIOR.jpg">
+                      <img src="STO INTERIOR.jpg" alt="Lamborghini Huracan STO Interior" width="600" height="400">
+                    </a>
+                    <div class="desc">Lamborghini Huracan STO - Interior</div>
+                  </div>
+
+                  <div class="gallery">
+                    <a target="_blank" href="STO SEAT.jpg">
+                      <img src="STO SEAT.jpg" alt="Lamborghini Huracan STO Seat" width="600" height="400">
+                    </a>
+                    <div class="desc">Lamborghini Huracan STO - Seat</div>
+                  </div>
+
+                  <div class="gallery">
+                    <a target="_blank" href="STO REAR.jpg">
+                      <img src="STO REAR.jpg" alt="Lamborghini Huracan STO Rear" width="600" height="400">
+                    </a>
+                    <div class="desc">Lamborghini Huracan STO - Rear</div>
+                  </div>
+
+                  <div class="gallery">
+                    <a target="_blank" href="720S REAR.jpg">
+                      <img src="720S REAR.jpg" alt="McLaren 720s Rear" width="600" height="400">
+                    </a>
+                    <div class="desc">McLaren 720s - Rear</div>
+                  </div>
+
+                  <div class="gallery">
+                    <a target="_blank" href="ANNIE650S REAR.jpg">
+                      <img src="ANNIE650S REAR.jpg" alt="McLaren 650s Rear" width="600" height="400">
+                    </a>
+                    <div class="desc">McLaren 650s - Rear</div>
+                  </div>
+                
+                </body>
+            </ul>
+        </nav>
+                    </ul>
+                </nav>
+            </div>
+    <footer>
+        <p>&copy; website by kai bateson</p>
+    </footer>
+    <script>
+        const audioPlayer = document.getElementById("audio-player");
+        const playButtons = document.querySelectorAll(".play-button");
+        let isPlaying = false;
+
+        playButtons.forEach(playButton => {
+            playButton.addEventListener("click", () => {
+                if (isPlaying) {
+                    audioPlayer.pause();
+                    playButton.src = "play-button-icon.png"; // Replace with play button icon
+                } else {
+                    audioPlayer.play();
+                    playButton.src = "pause-button-icon.png"; // Replace with pause button icon
+                }
+                isPlaying = !isPlaying;
+            });
+        });
+
+        window.addEventListener("load", () => {
+            const contentElements = document.querySelectorAll(".container, .play-button-container, footer");
+            contentElements.forEach(element => {
+                element.classList.add("fade-in");
+            });
+        });
+    </script>
+</body>
+</html>

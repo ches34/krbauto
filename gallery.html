@@ -1,0 +1,65 @@
+<link rel="stylesheet" type="text/css" href="websitecss.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gallery</h1>
+            <p>All My photos!</p>
+        </header>
+        <nav>
+            <ul class="links">
+              <nav>
+    <ul class="links">
+        <li>
+            <a href="https://www.instagram.com/krb.auto/">
+                <img class="fab fa-instagram"></i>Instagram
+            </a>
+        </li>
+    </head>
+    <body>
+      <nav>
+        <a href="steelefordhillclimb.html">Steeleford Hill Climb</a>
+      </nav>
+    </body>
+    </ul>
+</nav>
+            </ul>
+        </nav>
+    </div>
+    <footer>
+        <p>&copy; website by kai bateson</p>
+    </footer>
+    <script>
+        const audioPlayer = document.getElementById("audio-player");
+        const playButtons = document.querySelectorAll(".play-button");
+        let isPlaying = false;
+
+        playButtons.forEach(playButton => {
+            playButton.addEventListener("click", () => {
+                if (isPlaying) {
+                    audioPlayer.pause();
+                    playButton.src = "play-button-icon.png"; // Replace with play button icon
+                } else {
+                    audioPlayer.play();
+                    playButton.src = "pause-button-icon.png"; // Replace with pause button icon
+                }
+                isPlaying = !isPlaying;
+            });
+        });
+
+        window.addEventListener("load", () => {
+            const contentElements = document.querySelectorAll(".container, .play-button-container, footer");
+            contentElements.forEach(element => {
+                element.classList.add("fade-in");
+            });
+        });
+    </script>
+</body>
+</html>
